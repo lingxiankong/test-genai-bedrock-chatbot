@@ -91,6 +91,7 @@ class CodeStack(Stack):
             encryption_key=kms_key,
             block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
             enforce_ssl=True,
+            auto_delete_objects=True
         )
         NagSuppressions.add_resource_suppressions(
             kendra_bucket,
@@ -114,6 +115,7 @@ class CodeStack(Stack):
             encryption_key=kms_key,
             block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
             enforce_ssl=True,
+            auto_delete_objects=True,
         )
         NagSuppressions.add_resource_suppressions(
             sagemaker_bucket,

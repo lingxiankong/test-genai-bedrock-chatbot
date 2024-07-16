@@ -15,9 +15,10 @@
     ]
   },
   "context": {
+    "@aws-cdk/core:bootstrapQualifier": "lingxian",
     "logging": {
-      "lambda_log_level": "DEBUG",
-      "streamlit_log_level": "DEBUG"
+      "lambda_log_level": "INFO",
+      "streamlit_log_level": "INFO"
     },
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,
